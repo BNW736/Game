@@ -1,3 +1,7 @@
 #pragma once 
-#include "raylid"
+#include <vector>
+
+std::vector<int> map;
+
+int render();
 

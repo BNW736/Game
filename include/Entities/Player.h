@@ -1,8 +1,11 @@
 #pragma once 
-class Player{
+#include "Entity.h"
+
+class Player :public Entity{
     public:
     vector2 movements;
 
-    void movement(int side,int speed);
+    void movement(int speed);
+    void draw();
     
 }
