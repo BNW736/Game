@@ -1,8 +1,15 @@
-#include " Enemy.h"
+#include "Entities/Enemy.h"
 
-void movements(int speed){
-    //ai movements
+std::vector<Enemy> Enemies;
+
+void Enemy::move(float dt) {
+    if (live) {
+        movements.y += speed * dt;
+    }
 }
-void draw(){
-    drawrecternge()
+
+void Enemy::draw() {
+    if (live) {
+        DrawRectangle((int)movements.x, (int)movements.y, 10, 10, GREEN);
+    }
 }

@@ -1,9 +1,15 @@
-#include "Bullet.h"
+#include "Entities/Bullet.h"
 
+std::vector<Bullet> bullets;
 
-void movements(int speed){
-    //line
+void Bullet::move(float dt) {
+    if (live) {
+        movements.y -= speed * dt;
+    }
 }
-void draw(){
-    drawrecternge()
+
+void Bullet::draw() {
+    if (live) {
+        DrawRectangle((int)movements.x, (int)movements.y, 10, 10, BLACK);
+    }
 }

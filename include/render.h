@@ -1,7 +1,10 @@
-#pragma once 
-#include <vector>
+#pragma once
+#include "library.h"
+#include "Objects.h"
+#include "Entities/Player.h"
+#include "Entities/Enemy.h"
+#include "Entities/Bullet.h"
 
-std::vector<int> map;
 
 int render();
 

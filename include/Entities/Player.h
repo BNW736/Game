@@ -1,11 +1,13 @@
-#pragma once 
-#include "Entity.h"
+#pragma once
+#include "library.h"
 
-class Player :public Entity{
-    public:
-    vector2 movements;
+class Player {
+public:
+    Vector2 movements;
+    float speed = 10.0f;
 
-    void movement(int speed);
+    Player(float x = 0.0f, float y = 0.0f);
+
+    void move(float dt);
     void draw();
-    
-}
+};

@@ -1,9 +1,8 @@
 #include "render.h"
 
 int render(){
-    for(int x=0;x<map.size;x++){
-        for(int y=0;y<map.size;y++){
-            //logic
-        }
-    }
+    /*for(int x=0;x<map.size();x++){
+        DrawRectangle(map[x], RED);
+    } */
+   return 0;
 }
