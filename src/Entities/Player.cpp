@@ -5,6 +5,7 @@ Player::Player(float x, float y) {
 }
 
 void Player::move(float dt) {
+    //Enter the Players  logic
     if (IsKeyDown(KEY_W)) { movements.y += speed * dt; }
     else if (IsKeyDown(KEY_S)) { movements.y -= speed * dt; }
     else if (IsKeyDown(KEY_A)) { movements.x -= speed * dt; }

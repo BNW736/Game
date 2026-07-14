@@ -4,7 +4,7 @@ std::vector<Enemy> Enemies;
 
 void Enemy::move(float dt) {
     if (live) {
-        movements.y += speed * dt;
+        //Enter the enemys logic
     }
 }
 

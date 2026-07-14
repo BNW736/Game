@@ -4,7 +4,7 @@ std::vector<Bullet> bullets;
 
 void Bullet::move(float dt) {
     if (live) {
-        movements.y -= speed * dt;
+        //Enter the bullets logic
     }
 }
 
